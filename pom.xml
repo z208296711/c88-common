@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ParentProject</artifactId>
+        <groupId>com.c88</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>c88-common</artifactId>
+    <packaging>pom</packaging>
+    <name>c88-common</name>
+
+    <profiles>
+        <profile>
+            <id>develop</id>
+            <properties>
+                <profileActive>develop</profileActive>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/156/packages/maven</url>
+                </repository>
+            </repositories>
+            <distributionManagement>
+                <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/156/packages/maven</url>
+                </repository>
+                <snapshotRepository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/156/packages/maven</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+
+        <profile>
+            <id>pre</id>
+            <properties>
+                <profileActive>pre</profileActive>
+            </properties>
+            <repositories>
+                <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/174/packages/maven</url>
+                </repository>
+            </repositories>
+            <distributionManagement>
+                <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/174/packages/maven</url>
+                </repository>
+                <snapshotRepository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/174/packages/maven</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+
+        <profile>
+            <id>qa</id>
+            <properties>
+                <profileActive>qa</profileActive>
+            </properties>
+            <repositories>
+                <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/176/packages/maven</url>
+                </repository>
+            </repositories>
+            <distributionManagement>
+                <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/176/packages/maven</url>
+                </repository>
+                <snapshotRepository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/176/packages/maven</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+
+        <profile>
+            <id>stage</id>
+            <properties>
+                <profileActive>stage</profileActive>
+            </properties>
+            <repositories>
+                <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/177/packages/maven</url>
+                </repository>
+            </repositories>
+            <distributionManagement>
+                <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/177/packages/maven</url>
+                </repository>
+                <snapshotRepository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.hygo.cc/api/v4/projects/177/packages/maven</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+    </profiles>
+
+
+    <modules>
+        <module>common-core</module>
+        <module>common-web</module>
+        <module>common-mybatis</module>
+        <module>common-rabbitmq</module>
+        <module>common-redis</module>
+        <module>common-xxljob</module>
+        <module>common-sms</module>
+        <module>common-cloud-storage</module>
+        <module>common-kafka</module>
+    </modules>
+
+
+
+</project>

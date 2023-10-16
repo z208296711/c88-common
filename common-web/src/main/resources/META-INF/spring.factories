@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.c88.common.web.config.FeignConfig,\
+  com.c88.common.web.config.OpenApiConfig,\
+  com.c88.common.web.aop.LimitInterceptor,\
+  com.c88.common.web.aop.AnnoLogAspect,\
+  com.c88.common.web.config.SwaggerConfig,\
+  com.c88.common.web.exception.GlobalExceptionHandler
+

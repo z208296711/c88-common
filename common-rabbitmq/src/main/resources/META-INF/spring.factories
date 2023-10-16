@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.c88.amqp.producer.MessageProducer,\
+  com.c88.amqp.BroadcastConfig

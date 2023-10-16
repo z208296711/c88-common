@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.c88.storage.config.GCPStorageConfig,\
+  com.c88.storage.service.GCPFileUploadService
+

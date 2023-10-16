@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.c88.kafka.config.KafkaProducerConfig,\
+  com.c88.kafka.producer.KafkaMessageProducer

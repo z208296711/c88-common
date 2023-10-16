@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.c88.sms.MailService,\
+  com.c88.sms.impl.OnSmsVoiceProvider,\
+  com.c88.sms.impl.AbenlaProvider,\
+  com.c88.sms.impl.NuageProvider,\
+  com.c88.sms.SmsService
+
